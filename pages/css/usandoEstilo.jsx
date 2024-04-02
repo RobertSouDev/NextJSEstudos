@@ -1,12 +1,12 @@
-import Estilo from "@/components/estilo"
+import Estilo from "@/components/estilo";
 
-export default ()=> {
+export default function usandoEstilo(){
     return (
         <div>
-            <Estilo numero={3} color="#fff" direita />
-            <Estilo numero={-1} color="white"/>
+             <Estilo numero={3}/>
+             <hr />
+             <Estilo numero={-1}  color={"yellow"} direita/>
+
         </div>
     )
 }
-
-// ele vai considera o direita={True} e vai usa esses props
