@@ -6,19 +6,13 @@ export default function repeticao1(){
         "Bia",
         "Carlos",
         "Daniel",
-        "Laura"
+        "Laura",
     ]
 
-    function renderizarLista(){
-        const itens = []
-        
-        for (let i = 0; i < listaAprovados.length;i++){
-            itens.push(<li>{listaAprovados[i]}</li>)
-        }
+function renderizarLista(){
+    return listaAprovados.map((nome, i)=><li key={i}>{nome}</li>)
+} 
 
-        return itens
-
-    }
 
     return (
         <ul>
@@ -26,3 +20,16 @@ export default function repeticao1(){
         </ul>
     )
 }
+
+
+  // function renderizarLista(){
+    //    const itens = []
+
+    //    for(let i = 0 ; i < listaAprovados.length;i++){
+    //         itens.push(<li key={i}>{listaAprovados[i]}</li>)
+    //    }
+
+    //    return itens
+       
+    
+    // }
